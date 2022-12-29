@@ -267,3 +267,122 @@ img{
     box-shadow: 0 -1px 4px rgba(0, 0, 0, rgba(74, 8, 8, 0.756));
     
 }
+/*==================== HOME ====================*/
+.home_container{
+    gap: 1rem;
+}
+
+.home_content{
+    grid-template-columns: .5fr 3fr;
+    padding-top: 3.5rem;
+    align-items: center;
+    
+    
+}
+.home_img {
+    position: relative;
+    height: 600px;
+    width: 600px;
+}
+  .home_img img{
+position: relative;
+height: 100%;
+width: calc(130% - 80px);
+top: -100px;
+right: -100px;
+  
+    
+    animation: animateUser 4s linear infinite;
+
+}@keyframes animateUser {
+    50%{
+        right:50px;
+        top: -90px;
+    }
+}
+
+.home_social{
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+
+.home_social-icon{
+    font-size: 1.25rem;
+    color: var(--first-color);
+}
+
+.home_social-icon:hover{
+    color: var(--first-color-alt);
+}
+
+.home_blob{
+    width: 200px;
+    fill: var(--first-color);
+}
+
+.home_blob-img{
+    width: 170px;
+}
+
+.home_data{
+    grid-column: 1/2;
+}
+.home_data .home_intro{
+    font-size: 50px;
+}
+.home_data .home_title{
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: 1px;
+}
+.home_data .home_subtitle{
+    font-size: 35px;
+    margin-bottom: var(--mb-2);
+}
+.home_data .home_subtitle span{
+     font-weight: 600;
+    color: var(--first-color);
+}
+/* .home_title{
+    font-size: var(--big-font-size);
+}
+
+.home_subtitle{
+    font-size: var(--h3-font-size);
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-75);
+}
+
+.home_description{
+    margin-bottom: var(--mb-2);
+} */
+
+.home_scroll{
+    display: none;
+}
+
+.home_scroll-button{
+    color: var(--first-color);
+    transition: .3s;
+}
+
+.home_scroll-button:hover{
+    transform: translateY(.25rem);
+}
+
+.home_scroll-mouse{
+    font-size: 2rem;
+}
+
+.home_scroll-name{
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-25);
+}
+
+.home_scroll-arrow{
+    font-size: 1.25rem;
+}
