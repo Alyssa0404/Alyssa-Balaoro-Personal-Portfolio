@@ -437,3 +437,140 @@ right: -100px;
     display: flex;
     justify-content: center;
 }
+
+/*==================== SKILLS ====================*/
+.skills_container{
+    row-gap: 0;
+}
+
+.skills_header{
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+}
+
+.skills_icon,
+.skills_arrow{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.skills_icon{
+    margin-right: var(--mb-0-75);
+}
+
+.skills_title{
+    font-size: var(--h3-font-size);
+}
+.skills_subtitle{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.skills_list{
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+}
+
+.skills_titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+}
+
+.skills_name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skills_bar,
+.skills_percentage{
+    height: 5px;
+    border-radius: .25rem;
+}
+
+.skills_bar{
+    background-color: var(--first-color-lighter);
+}
+
+.skills_percentage{
+    display: block;
+    background-color: var(--first-color);
+}
+
+.skills_html{
+    width: 40%;
+}
+.skills_css{
+    width: 30%;
+}
+.skills_js{
+    width: 20%;
+}
+.skills_java{
+    width: 30%;
+}
+
+/* Active Modal */
+
+
+/*==================== PORTFOLIO ====================*/
+.portfolio_container{
+    overflow: initial;
+    margin-bottom: var(--mb-3);
+}
+
+.portfolio_content{
+    padding: 0 1.5rem;
+}
+
+.portfolio_img{
+    width: 265px;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+.portfolio_title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+p.portfolio_description{
+    padding-bottom: 1rem;
+}
+
+.portfolio_button:hover .button_icon{
+    transform: translateX(.25rem);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: '';
+}
+
+.swiper-portfolio-icon{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.swiper-button-prev{
+    left: -.5rem;
+}
+
+.swiper-button-next{
+    right: -.5rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet{
+    outline: none;
+}
